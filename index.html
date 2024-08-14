@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books List with Footer</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <h1>Books List</h1>
+    <ul id="booksList"></ul> <!-- This is where the books will be listed -->
+
+    <div class="footer" id="footer">
+        <div class="footer-content">
+            <div class="feedback-section">
+                <span class="help-text">Was this helpful?</span>
+                <div class="feedback-buttons">
+                    <button class="feedback-button" onclick="handleFeedback('yes')">Yes</button>
+                    <button class="feedback-button" onclick="handleFeedback('no')">No</button>
+                </div>
+            </div>
+            <button class="exit-button" onclick="hideFooter()">✖</button>
+        </div>
+    </div>
+
+    <script>
+        function loadXMLData() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'data.xml', true); // Path to your XML file
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    var xml = xhr.responseXML;
+                    var books = xml.getElementsByTagName('book');
+                    var booksList = document.getElementById('booksList');
+
+                    for (var i = 0; i < books.length; i++) {
+                        var title = books[i].getElementsByTagName('title')[0].textContent;
+                        var author = books[i].getElementsByTagName('author')[0].textContent;
+                        var year = books[i].getElementsByTagName('year')[0].textContent;
+                        var genre = books[i].getElementsByTagName('genre')[0].textContent;
+
+                        var listItem = document.createElement('li');
+                        listItem.textContent = `${title} by ${author} (${year}) - Genre: ${genre}`;
+                        booksList.appendChild(listItem);
+                    }
+                }
+            };
+            xhr.send();
+        }
+
+        function hideFooter() {
+            var footer = document.getElementById('footer');
+            footer.style.display = 'none';
+        }
+
+        function handleFeedback(response) {
+            alert('You clicked ' + response);
+        }
+
+        window.onload = loadXMLData; // Load XML data when the page loads
+    </script>
+</body>
+</html>
