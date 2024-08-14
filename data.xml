@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <library>
-    <book id="1">
+    <book id="book1">
         <title>The Great Gatsby</title>
         <author>F. Scott Fitzgerald</author>
         <year>1925</year>
         <genre>Fiction</genre>
     </book>
-    <book id="2">
+    <book id="book2">
         <title>To Kill a Mockingbird</title>
         <author>Harper Lee</author>
         <year>1960</year>
         <genre>Fiction</genre>
     </book>
-    <book id="3">
+    <book id="book3">
         <title>1984</title>
         <author>George Orwell</author>
         <year>1949</year>
         <genre>Dystopian</genre>
     </book>
-    <book id="4">
+    <book id="book4">
         <title>One Hundred Years of Solitude</title>
         <author>Gabriel García Márquez</author>
         <year>1967</year>
         <genre>Magical Realism</genre>
     </book>
-    <book id="5">
+    <book id="book5">
         <title>Pride and Prejudice</title>
         <author>Jane Austen</author>
         <year>1813</year>
