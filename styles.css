@@ -45,7 +45,7 @@ h1 {
     position: sticky;
     bottom: 0;
     width: 100%;
-    background-color: #f8f8f8; /* Updated to a lighter shade of grey */
+    background-color: #fafafa; /* Updated to a lighter shade of grey */
     padding: 10px 20px; /* Updated padding */
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
     z-index: 1000;
@@ -79,8 +79,11 @@ h1 {
     display: flex;
     align-items: center; /* Center text vertically */
     justify-content: center; /* Center text horizontally */
+    border: none; /* Remove border */
     border-radius: 4px; /* Optional: Add border radius for rounded corners */
     cursor: pointer;
+    width: 45px; /* Set fixed width */
+    height: 30px; /* Set a fixed height to ensure consistent button size */
 }
 
 .exit-button {
