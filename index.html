@@ -39,6 +39,8 @@
                 if (xhr.readyState === 4 && xhr.status === 200) {
                     var xml = xhr.responseXML;
                     var books = xml.getElementsByTagName('book');
+                    console.log('Number of books:', books.length); // Log the number of books
+
                     var booksList = document.getElementById('booksList');
                     var tocList = document.createElement('ul');
 
@@ -87,3 +89,4 @@
     </script>
 </body>
 </html>
+
