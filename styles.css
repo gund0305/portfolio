@@ -46,7 +46,7 @@ h1 {
     bottom: 0;
     width: 100%;
     background-color: #f1f1f1;
-    padding: 15px 20px; /* Updated padding */
+    padding: 10px 20px; /* Updated padding */
     box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
     z-index: 1000;
     box-sizing: border-box; /* Ensure padding is included in total height */
