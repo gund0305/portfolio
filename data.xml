@@ -30,4 +30,65 @@
         <year>1813</year>
         <genre>Romance</genre>
     </book>
+    <!-- Additional Books -->
+    <book id="book6">
+        <title>Brave New World</title>
+        <author>Aldous Huxley</author>
+        <year>1932</year>
+        <genre>Dystopian</genre>
+    </book>
+    <book id="book7">
+        <title>The Catcher in the Rye</title>
+        <author>J.D. Salinger</author>
+        <year>1951</year>
+        <genre>Fiction</genre>
+    </book>
+    <book id="book8">
+        <title>Beloved</title>
+        <author>Toni Morrison</author>
+        <year>1987</year>
+        <genre>Historical Fiction</genre>
+    </book>
+    <book id="book9">
+        <title>The Hobbit</title>
+        <author>J.R.R. Tolkien</author>
+        <year>1937</year>
+        <genre>Fantasy</genre>
+    </book>
+    <book id="book10">
+        <title>Fahrenheit 451</title>
+        <author>Ray Bradbury</author>
+        <year>1953</year>
+        <genre>Dystopian</genre>
+    </book>
+    <book id="book11">
+        <title>The Alchemist</title>
+        <author>Paulo Coelho</author>
+        <year>1988</year>
+        <genre>Adventure</genre>
+    </book>
+    <book id="book12">
+        <title>Jane Eyre</title>
+        <author>Charlotte Brontë</author>
+        <year>1847</year>
+        <genre>Gothic Fiction</genre>
+    </book>
+    <book id="book13">
+        <title>Wuthering Heights</title>
+        <author>Emily Brontë</author>
+        <year>1847</year>
+        <genre>Gothic Fiction</genre>
+    </book>
+    <book id="book14">
+        <title>Catch-22</title>
+        <author>Joseph Heller</author>
+        <year>1961</year>
+        <genre>Satire</genre>
+    </book>
+    <book id="book15">
+        <title>Lord of the Flies</title>
+        <author>William Golding</author>
+        <year>1954</year>
+        <genre>Allegory</genre>
+    </book>
 </library>
