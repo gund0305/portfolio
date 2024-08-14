@@ -74,14 +74,12 @@ h1 {
 .feedback-button {
     margin-right: 5px;
     padding: 8px;
-    width: 80px; /* Fixed width for buttons */
+    background-color: #f0f0f0; /* Updated background color */
     text-align: center; /* Center text horizontally */
     display: flex;
     align-items: center; /* Center text vertically */
     justify-content: center; /* Center text horizontally */
-    background-color: #e0e0e0; /* Optional: Add background color */
-    border: 1px solid #ccc; /* Optional: Add border */
-    border-radius: 4px; /* Optional: Add border radius */
+    border-radius: 4px; /* Optional: Add border radius for rounded corners */
     cursor: pointer;
 }
 
