@@ -73,6 +73,7 @@ h1 {
 
 .feedback-button {
     margin-right: 5px;
+    padding: 8px; /* Added padding */
 }
 
 .exit-button {
