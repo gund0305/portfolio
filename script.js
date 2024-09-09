@@ -1,20 +1,3 @@
-// Your web app's Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyDKeEgL_yTZTkGtDZ59Zv-YHY59lTjFFHE",
-    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-    projectId: "clickcounter-b5395",
-    storageBucket: "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId: "YOUR_APP_ID",
-    measurementId: "YOUR_MEASUREMENT_ID"
-};
-
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const analytics = firebase.analytics(); // Initialize Firebase Analytics (optional)
-const firestore = firebase.firestore(); // Initialize Firestore
-const app = initializeApp(firebaseConfig); // Initialize Firebase
-
 function loadXMLData() {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', 'data.xml', true);
@@ -70,15 +53,6 @@ function hideFooter() {
 
 function handleFeedback(response) {
     alert('You clicked ' + response);
-    // Store feedback in Firestore
-    firestore.collection('feedback').add({
-        response: response,
-        timestamp: new Date()
-    }).then(() => {
-        console.log('Feedback stored successfully');
-    }).catch(error => {
-        console.error('Error storing feedback:', error);
-    });
 }
 
 window.onload = loadXMLData; // Load XML data when the page loads
